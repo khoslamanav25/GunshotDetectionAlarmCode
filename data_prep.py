@@ -13,6 +13,17 @@ import numpy as np
 import os
 from glob import glob
 
+def clear_folder(folder):
+    for filename in os.listdir(folder):
+        file_path = os.path.join(folder, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)
+        except:
+            print('clear folder operation failed')
+    
 def create_spectrogram(filename,name,train):
     plt.interactive(False) #not every plt is drawn
     clip, sample_rate = librosa.load(filename, sr=None)

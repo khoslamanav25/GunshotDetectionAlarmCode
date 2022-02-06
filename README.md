@@ -21,3 +21,5 @@ Make sure python backend is running in the backround
 Run expo install
 Run expo start
 Use the QR code to scan or i/a based on emulators avaliability
+
+There the first Zip which has node modules whereas the second does not. I was forced to upload a zip because of some uploading issues with the entire folder I was facing.

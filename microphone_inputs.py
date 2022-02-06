@@ -28,4 +28,4 @@ def create_spectogram_from_mic(frequency, duration, counter):
     write(wav_file, frequency, recording)
     
     create_spectrogram(wav_file, spectrogram_file, train=True)
-    
+     

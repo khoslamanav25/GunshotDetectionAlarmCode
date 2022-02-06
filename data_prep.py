@@ -48,6 +48,6 @@ def convert_wav_to_spectrogram(sub_directory, train):
         if os.path.isfile(f):
             create_spectrogram(f, f'{sub_directory}_{counter}', train)
             
-#for i in os.listdir('soundDatabase'):
-#    convert_wav_to_spectrogram(i, train=True)
+for i in os.listdir('soundDatabase'):
+    convert_wav_to_spectrogram(i, train=True)
 

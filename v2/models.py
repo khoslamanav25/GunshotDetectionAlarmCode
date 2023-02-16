@@ -21,3 +21,18 @@ def ann_model_1(input_shape):
     
     return model
 
+# example CNN => nothing
+def cnn_model_1(input_shape):
+    
+    model = Sequential()
+    model.add(Dense(1000, activation='relu', input_shape=input_shape))
+    model.add(Dense(750, activation='relu'))
+    model.add(Dense(500, activation='relu'))
+    model.add(Dense(250, activation='relu'))
+    model.add(Dense(100, activation='relu'))
+    model.add(Dense(50, activation='relu'))
+    model.add(Dense(10, activation='softmax'))
+    model.summary()
+    
+    return model
+
